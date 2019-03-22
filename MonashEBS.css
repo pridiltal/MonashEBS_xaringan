@@ -58,14 +58,28 @@
 
 
 body {
-  font-family: 'Actor', sans-serif;
+   font-family: 'Open Sans', Arial, sans-serif;
 }
 
 h1, h2, h3 {
-  font-weight: 400;
-  margin-bottom: 0;
-  margin-top: 0;
+  font-weight: 100;
+  margin-bottom: 5;
+  margin-top: 5;
   color: #0063a7; /*rgb(0, 99, 167) - monash white blue*/
   
 }
+
+ul {
+  list-style-type: square;
+  color: #cc5900;  /* to change the bullet point colour and icon - rgb(204, 89, 0)*/
+}
+li{
+  margin: 10px 0;
+}
+.large { font-size: 130% }
+.midi { font-size: 90% }
+.small { font-size: 70% }
+
+
+
 
