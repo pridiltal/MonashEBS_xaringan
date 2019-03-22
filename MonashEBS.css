@@ -1,0 +1,71 @@
+
+/* Title Slide */
+.title-slide {
+  background-image: url("titlepage.png");
+  background-size: cover;
+}
+
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+.title-slide h1, h2, h3 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #ffffff; 
+  text-align: left;
+  width: 67%;
+}
+
+/* Title Slide: font size of author's name*/
+.title-slide h3:nth-of-type(1) {
+  font-size: 1.7em;
+  position: fixed;
+  top: 70%;
+}
+
+/* Title Slide: font size of date */
+.title-slide h3:nth-of-type(2) {
+  font-size: 1em;
+  position: fixed;
+  top: 80%;
+}
+
+/* Title Slide: font size of subtitle */
+.title-slide h2 {
+  font-size: 0.5em;
+}
+
+.inverse {
+  background-color: #0063a7;
+}
+.inverse h1 {
+  color: #ffffff;
+  font-size: 2.4em; /* font size of main title*/
+  line-height: 1.2em;
+  
+}
+.inverse h2 {
+  color: #ffffff;
+  font-size: 1.7em;
+  line-height: 1.2em;
+}
+.inverse h3 {
+  color: #ffffff;
+  font-size: 1.2em;
+  line-height: 1.0em;
+}
+
+
+
+body {
+  font-family: 'Actor', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #0063a7; /*rgb(0, 99, 167) - monash white blue*/
+  
+}
+
