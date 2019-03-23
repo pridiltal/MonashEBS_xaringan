@@ -78,18 +78,26 @@ ul {
 
 li { 
   padding-left: 16px; 
+  margin-top: 12px;
 }
 
-li:before {
+ul li:before {
   content: "■"; /* Insert content that looks like bullets */
   padding-right: 8px;
   color: #cc5900; /* Or a color you prefer */
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
+ol {
+  background: #E7E7E7;
+  padding: 20px;
+  border:1px solid grey;
+}
 
+ol li {
+  background: #E7E7E7;
+  padding: 5px;
+  margin-left: 35px;
+}
 
-.tiny{font-size: 60%}
-.small { font-size: 70% }
-.large { font-size: 160% }
-.Large{font-size: 190%}
+.entry-content img { background:#def123 }
