@@ -1,7 +1,7 @@
 ---
 title: "Monash EBS xaringan Template"
 subtitle: ""
-author: "Your Name"
+author: "Priyanga Dilini Talagala"
 date: "`r Sys.Date()`"
 seal: false
 output:
@@ -14,22 +14,27 @@ output:
       countIncrementalSlides: false
 ---
 
-## Slides with bullets
 
+layout: true
+  
+<div class="my-header"></div>
+
+---
+
+### Slides with bullets
 - Bullet 1
 - Bullet 2
 - Bullet 3
 
-Use `</span>` to <span style="color:chocolate">highlight</span> some text
 
 ### Some enumeration
-
 1. The first item
 1. Stuff
 1. Nonsense
 
 ---
-## Build incremental slides
+
+###  Build incremental slides
 
 Use two dashes -- to separate content on a slide.
 --
@@ -41,6 +46,16 @@ Use two dashes -- to separate content on a slide.
 --
 
 - Bullet 3
+
+---
+
+- Use `<span style="color:chocolate">text</span>` to <span style="color:chocolate">highlight</span> some text
+- We can also make `blockquotes`
+- we can use `<mu-blockquote>text</mu-blockquote>` 
+  
+<mu-blockquote> This is a blocked quote </mu-blockquote>
+
+---
 
 
 ---
@@ -183,8 +198,11 @@ knitr::kable(mtcars[1:4, 1:7],caption="(Parts of) the mtcars dataset",
 
 - link
 
----
 
+
+
+
+---
 
 class: center, middle
 

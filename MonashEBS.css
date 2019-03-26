@@ -76,11 +76,6 @@ ul {
   margin: 0;
 }
 
-li { 
-  padding-left: 16px; 
-  margin-top: 12px;
-}
-
 ul li:before {
   content: "■"; /* Insert content that looks like bullets */
   padding-right: 8px;
@@ -88,16 +83,39 @@ ul li:before {
   font-size: 1.2em;
 }
 
-ol {
-  background: #E7E7E7;
-  padding: 20px;
-  border:1px solid grey;
+li { 
+  padding-left: 16px; 
+  margin-top: 12px;
 }
 
-ol li {
-  background: #E7E7E7;
-  padding: 5px;
-  margin-left: 35px;
+
+/* EBSM blockquote */
+mu-blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-top: solid 10px #0063a7;
+  background-color:  #E7E7E7;
+  padding: 1em;
+  
+   /*Font*/
+  color: black;
+  
+  /*Borders - (Optional)*/
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
-.entry-content img { background:#def123 }
+div.my-header {
+    background-color: #0063a7;
+   /* background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffb76b), color-stop(0%,#ffa73d), color-stop(0%,#ffffff), color-stop(10%,#ffffff), color-stop(25%,#F77A00), color-stop(100%,#F77A00));*/
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    width: 100%;
+    text-align: left;
+}
+
