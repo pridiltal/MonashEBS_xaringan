@@ -1,17 +1,62 @@
 ---
-title: "Monash EBS xaringan Template"
-subtitle: ""
+title: "xaringan "
+subtitle: " with a </br>Monash Business School theme"
 author: "Your Name"
 date: "`r Sys.Date()`"
 seal: false
 output:
   xaringan::moon_reader:
-    css: "monashEBS.css"
+    css: [default, "MonashBS.css", "MonashBS-font.css"]
     lib_dir: libs
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+---
+
+# How to use it
+
+Specify `MonashBS` and `MonashBSs-fonts` in the `css` argument of `moon_reader()`
+
+```yaml
+output: 
+  xaringan::moon_reader:
+    css: [default, MonashBS, MonashBS-fonts]
+```
+
+---
+
+# Header 1
+
+## Header 2
+
+- xaringan is so powerful!
+
+### Header 3
+
+- xaringan is so powerful!
+
+#### Header 4
+
+- xaringan is so powerful!
+
+---
+
+class: clear
+
+If you use `class: clear` for a slide, you can have a slide without the colored top. 
+
+### Additional tweaks
+
+- Use `<span style="color:chocolate">text</span>` to <span style="color:chocolate">highlight</span> some text
+- We can also make `blockquotes`
+- we can use `<blockquote>text</blockquote>` 
+
+<blockquote>
+  Essentially, all models are wrong, but some are useful.
+  <span>George E. P. Box</span>
+</blockquote>
+
 ---
 
 # Bullets 
@@ -42,17 +87,6 @@ Use two dashes -- to separate content on a slide.
 --
 
 - Bullet 3
-
---
-
-## More tips
-
-- Use `<span style="color:chocolate">text</span>` to <span style="color:chocolate">highlight</span> some text
-- We can also make `blockquotes`
-- we can use `<mu-blockquote>text</mu-blockquote>` 
-  
-<mu-blockquote> This is a blocked quote </mu-blockquote>
-
 
 
 
@@ -129,8 +163,7 @@ The following code generates the plot on the next slide (taken from
 ```{r pressureCode, eval=FALSE, echo=TRUE}
 library(stats)
 set.seed(753)
-bx.p <- boxplot(split(rt(100, 4),
-                      gl(5, 20)), plot=FALSE)
+bx.p <- boxplot(split(rt(100, 4), gl(5, 20)), plot=FALSE)
 bxp(bx.p, notch = FALSE, boxfill = "orange",
     frame = FALSE, outl = TRUE,
     main = "Example from help(bxp)")
@@ -191,10 +224,6 @@ knitr::kable(mtcars[1:4, 1:7],caption="(Parts of) the mtcars dataset",
 
 ---
 
-class: clear
-
-## Slide without border
----
 class: center, middle, inverse
 
 # Thanks!

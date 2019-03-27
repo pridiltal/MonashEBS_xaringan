@@ -1,5 +1,5 @@
 .remark-slide-content {
-  background-color: #FAFAFA;
+  background-color: #ffffff;
   border-top: 80px solid #0063a7;
   font-size: 20px;
   font-weight: 300;
@@ -7,9 +7,6 @@
   padding: 1em 2em 1em 2em
 }
 
-.title-slide .inverse .remark-slide-content {
-  background-color: #FAFAFA;
-}
 
 .inverse {
   background-color: #0063a7;
@@ -17,13 +14,12 @@
 }
 
 .remark-slide-content > h1 {
-  /*font-family: 'Fira Sans';*/
   font-family: 'Open Sans', Arial, sans-serif;
   font-weight: normal;
   font-size: 45px;
   margin-top: -95px;
   margin-left: -00px;
-  color: #FAFAFA;
+  color: #ffffff;
 }
 
 .remark-slide-content > inverse {
@@ -40,7 +36,7 @@ body {
 
 /* Removes colored bar from top of the slide resulting in a clear slide */
 .clear{
-  border-top: 0px solid #FAFAFA;
+  border-top: 0px solid #ffffff;
 }
 
 .remark-slide-content > h2, h3, h4 {
@@ -65,7 +61,8 @@ body {
 
 .title-slide {
   border-top: 0px;
-  background-image: url("titlepage.png");
+  /*background-image: url("titlepage.png");*/
+  background-image: url("https://raw.githubusercontent.com/eddelbuettel/binb/master/inst/rmarkdown/templates/monash/skeleton/titlepage.png");
   background-size: cover;
 }
 
@@ -73,13 +70,13 @@ body {
 
 .title-slide > h1  {
   color: #ffffff;
-  font-size: 50px;
+  font-size: 60px;
   text-shadow: none;
   font-weight: 300;
   text-align: left;
   margin-left: 15px;
   padding-top: 80px;
-  width: 67%;
+  width: 65%;
 }
 .title-slide > h2  {
   margin-top: -25px;
@@ -90,6 +87,7 @@ body {
   font-size: 35px;
   text-align: left;
   margin-left: 15px;
+  width: 65%;
 }
 .title-slide > h3  {
   color: #ffffff;
@@ -99,18 +97,17 @@ body {
   text-align: left;
   margin-left: 15px;
   margin-bottom: -30px;
+  width: 65%;
 }
 
 .remark-slide-number {
   font-size: 13pt;
- /* font-family: 'Fira Sans';*/
   font-family: 'Open Sans', Arial, sans-serif;
   color: #272822;
   opacity: 1;
 }
 .inverse .remark-slide-number {
   font-size: 13pt;
-  /*font-family: 'Fira Sans';*/
   font-family: 'Open Sans', Arial, sans-serif;
   color: #FAFAFA;
   opacity: 1;
@@ -142,29 +139,43 @@ li {
 }
 
 
-/* EBSM blockquote */
-mu-blockquote {
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 40px;
-  margin-right: 40px;
-  border-left: solid 10px #0063a7;
-  background-color:  #E7E7E7;
-  padding: 1em;
-  
-   /*Font*/
-  color: black;
-  
-  /*Borders - (Optional)*/
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
+blockquote{
+  width:80%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #0063a7;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #0063a7;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
 }
 
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color: #0063a7;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  margin-top:1em;
+}
+/*R codes*/ 
 pre {
     background: #f4f4f4;
     border: 1px solid #ddd;
-    border-left: 3px solid #f36d33;
+    border-left: 3px solid #cc5900;
     color: #666;
     page-break-inside: avoid;
     font-family: monospace;
