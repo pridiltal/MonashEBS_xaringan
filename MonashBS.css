@@ -150,6 +150,9 @@ blockquote{
   line-height:1.6;
   position: relative;
   background:#EDEDED;
+    /*Borders - (Optional)*/
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
 blockquote::before{
@@ -171,6 +174,27 @@ blockquote span{
   color:#333333;
   margin-top:1em;
 }
+
+/* highlight-block */
+highlight-block {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 10px #0063a7;
+  background-color:  #E7E7E7;
+  padding: 1em;
+  
+   /*Font*/
+  color: black;
+  
+  /*Borders - (Optional)*/
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+
 /*R codes*/ 
 pre {
     background: #f4f4f4;
@@ -188,4 +212,12 @@ pre {
     display: block;
     word-wrap: break-word;
 }
+
+
+/* to highlight some text*/
+.highlight {
+    color: #cc5900;
+}
+
+
 
