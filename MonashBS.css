@@ -1,23 +1,22 @@
+body {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-size: 14px;
+}
+
 .remark-slide-content {
   background-color: #ffffff;
   border-top: 80px solid #0063a7;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 300;
   line-height: 1.5;
   padding: 1em 2em 1em 2em
 }
 
-
-.inverse {
-  background-color: #0063a7;
-  text-shadow: none;
-}
-
 .remark-slide-content > h1 {
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-weight: normal;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-weight: bold;
   font-size: 45px;
-  margin-top: -95px;
+  margin-top: -100px;
   margin-left: -00px;
   color: #ffffff;
 }
@@ -29,10 +28,16 @@ border-bottom: 1px solid black;
 position: absolute;
 }
 
-body {
-   font-family: 'Open Sans', Arial, sans-serif;
+.remark-code, .remark-inline-code {
+  font-family: 'Source Code Pro', Arial, sans-serif;
+  font-size: 24px;
 }
 
+
+.inverse {
+  background-color: #0063a7;
+  text-shadow: none;
+}
 
 /* Removes colored bar from top of the slide resulting in a clear slide */
 .clear{
@@ -61,8 +66,7 @@ body {
 
 .title-slide {
   border-top: 0px;
-  /*background-image: url("titlepage.png");*/
-  background-image: url("https://raw.githubusercontent.com/eddelbuettel/binb/master/inst/rmarkdown/templates/monash/skeleton/titlepage.png");
+  background-image: url("titlepage.png");
   background-size: cover;
 }
 
@@ -72,7 +76,7 @@ body {
   color: #ffffff;
   font-size: 60px;
   text-shadow: none;
-  font-weight: 300;
+  font-weight: bold;
   text-align: left;
   margin-left: 15px;
   padding-top: 80px;
@@ -133,8 +137,8 @@ ul li:before {
   font-size: 1.2em;
 }
 
-li { 
-  padding-left: 16px; 
+li {
+  padding-left: 16px;
   margin-top: 12px;
 }
 
@@ -186,17 +190,17 @@ highlight-block {
   background-color:  #E7E7E7;
   padding: 1em;
   width:80%;
-  
+
    /*Font*/
   color: black;
-  
+
   /*Borders - (Optional)*/
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
 
 
-/*R codes*/ 
+/*R codes*/
 pre {
     background: #f4f4f4;
     border: 1px solid #ddd;
