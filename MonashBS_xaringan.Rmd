@@ -16,12 +16,12 @@ output:
 
 # How to use it
 
-Specify `MonashBS` and `MonashBSs-fonts` in the `css` argument of `moon_reader()`
+Specify `MonashBS.css` and `MonashBS-fonts.css` in the `css` argument of `moon_reader()`
 
 ```yaml
 output: 
   xaringan::moon_reader:
-    css: [default, MonashBS, MonashBS-fonts]
+    css: [default, "MonashBS.css", "MonashBS-font.css"]
 ```
 
 ---
@@ -228,5 +228,5 @@ knitr::kable(mtcars[1:4, 1:7],caption="(Parts of) the mtcars dataset",
 
 class: center, middle, inverse
 
-# Thanks!
+# Thank You!
 

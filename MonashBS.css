@@ -181,10 +181,11 @@ highlight-block {
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 40px;
-  margin-right: 40px;
+  margin-right: 20px;
   border-left: solid 10px #0063a7;
   background-color:  #E7E7E7;
   padding: 1em;
+  width:80%;
   
    /*Font*/
   color: black;
