@@ -1,73 +1,126 @@
-
-/* Title Slide */
-.title-slide {
-  background-image: url("titlepage.png");
-  background-size: cover;
+.remark-slide-content {
+  background-color: #FAFAFA;
+  border-top: 80px solid #0063a7;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 1em 2em 1em 2em
 }
 
-.title-slide .remark-slide-number {
-  display: none;
-}
-
-.title-slide h1, h2, h3 {
-  font-family: 'Open Sans', Arial, sans-serif;
-  color: #ffffff; 
-  text-align: left;
-  width: 67%;
-}
-
-/* Title Slide: font size of author's name*/
-.title-slide h3:nth-of-type(1) {
-  font-size: 1.7em;
-  position: fixed;
-  top: 70%;
-}
-
-/* Title Slide: font size of date */
-.title-slide h3:nth-of-type(2) {
-  font-size: 1em;
-  position: fixed;
-  top: 80%;
-}
-
-/* Title Slide: font size of subtitle */
-.title-slide h2 {
-  font-size: 0.5em;
+.title-slide .inverse .remark-slide-content {
+  background-color: #FAFAFA;
 }
 
 .inverse {
   background-color: #0063a7;
-}
-.inverse h1 {
-  color: #ffffff;
-  font-size: 2.4em; /* font size of main title*/
-  line-height: 1.2em;
-  
-}
-.inverse h2 {
-  color: #ffffff;
-  font-size: 1.7em;
-  line-height: 1.2em;
-}
-.inverse h3 {
-  color: #ffffff;
-  font-size: 1.2em;
-  line-height: 1.0em;
+  text-shadow: none;
 }
 
+.remark-slide-content > h1 {
+  /*font-family: 'Fira Sans';*/
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 45px;
+  margin-top: -95px;
+  margin-left: -00px;
+  color: #FAFAFA;
+}
 
+.remark-slide-content > inverse {
+width: 112px;
+height: 47px;
+border-bottom: 1px solid black;
+position: absolute;
+}
 
 body {
    font-family: 'Open Sans', Arial, sans-serif;
 }
 
-h1, h2, h3 {
-  font-weight: 100;
-  margin-bottom: 5;
-  margin-top: 5;
-  color: #0063a7; /*rgb(0, 99, 167) - monash white blue*/
-  
+
+/* Removes colored bar from top of the slide resulting in a clear slide */
+.clear{
+  border-top: 0px solid #FAFAFA;
 }
+
+.remark-slide-content > h2, h3, h4 {
+  padding-top: -15px;
+  padding-bottom: 00px;
+  color:#0063a7;
+  text-shadow: none;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 00px;
+  margin-bottom: -10px;
+}
+
+.remark-slide-content > h2, .pull-left > h2, .pull-right > h2 {
+  font-size: 40px;
+}
+
+.remark-slide-content > h3, .remark-slide-content > h4,
+.pull-left > h3, .pull-left > h4, .pull-right > h3, .pull-right > h4 {
+  font-size: 30px;
+}
+
+.title-slide {
+  border-top: 0px;
+  background-image: url("titlepage.png");
+  background-size: cover;
+}
+
+
+
+.title-slide > h1  {
+  color: #ffffff;
+  font-size: 50px;
+  text-shadow: none;
+  font-weight: 300;
+  text-align: left;
+  margin-left: 15px;
+  padding-top: 80px;
+  width: 67%;
+}
+.title-slide > h2  {
+  margin-top: -25px;
+  padding-bottom: -20px;
+  color: #ffffff;
+  text-shadow: none;
+  font-weight: 300;
+  font-size: 35px;
+  text-align: left;
+  margin-left: 15px;
+}
+.title-slide > h3  {
+  color: #ffffff;
+  text-shadow: none;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: left;
+  margin-left: 15px;
+  margin-bottom: -30px;
+}
+
+.remark-slide-number {
+  font-size: 13pt;
+ /* font-family: 'Fira Sans';*/
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #272822;
+  opacity: 1;
+}
+.inverse .remark-slide-number {
+  font-size: 13pt;
+  /*font-family: 'Fira Sans';*/
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #FAFAFA;
+  opacity: 1;
+}
+
+/* turns off slide numbers for title page: https://github.com/gnab/remark/issues/298 */
+.title-slide .remark-slide-number {
+  display: none;
+}
+
 
 
 ul {
@@ -96,7 +149,7 @@ mu-blockquote {
   margin-bottom: 1em;
   margin-left: 40px;
   margin-right: 40px;
-  border-top: solid 10px #0063a7;
+  border-left: solid 10px #0063a7;
   background-color:  #E7E7E7;
   padding: 1em;
   
@@ -108,14 +161,20 @@ mu-blockquote {
   -webkit-border-radius: 5px;
 }
 
-div.my-header {
-    background-color: #0063a7;
-   /* background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffb76b), color-stop(0%,#ffa73d), color-stop(0%,#ffffff), color-stop(10%,#ffffff), color-stop(25%,#F77A00), color-stop(100%,#F77A00));*/
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    height: 30px;
-    width: 100%;
-    text-align: left;
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
 }
 

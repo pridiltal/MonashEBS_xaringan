@@ -1,0 +1,151 @@
+
+/* Title Slide */
+.title-slide {
+  background-image: url("titlepage.png");
+  background-size: cover;
+}
+
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+.title-slide h1, h2, h3 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #ffffff; 
+  text-align: left;
+  width: 67%;
+}
+
+/* Title Slide: font size of author's name*/
+.title-slide h3:nth-of-type(1) {
+  font-size: 1.7em;
+  position: fixed;
+  top: 70%;
+}
+
+/* Title Slide: font size of date */
+.title-slide h3:nth-of-type(2) {
+  font-size: 1em;
+  position: fixed;
+  top: 80%;
+}
+
+/* Title Slide: font size of subtitle */
+.title-slide h2 {
+  font-size: 0.5em;
+}
+
+.inverse {
+  background-color: #0063a7;
+}
+.inverse h1 {
+  color: #ffffff;
+  font-size: 2.4em; /* font size of main title*/
+  line-height: 1.2em;
+  
+}
+.inverse h2 {
+  color: #ffffff;
+  font-size: 1.7em;
+  line-height: 1.2em;
+}
+.inverse h3 {
+  color: #ffffff;
+  font-size: 1.2em;
+  line-height: 1.0em;
+}
+
+
+
+body {
+   font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/*h1 {
+  
+   background-color: #0063a7;
+   /* background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffb76b), color-stop(0%,#ffa73d), color-stop(0%,#ffffff), color-stop(10%,#ffffff), color-stop(25%,#F77A00), color-stop(100%,#F77A00));*/
+   /* position: absolute;
+    top: 0px;
+    left: 0px;
+   /* height: 70px;*/
+   /* width: 100%;
+    text-align: left;
+    padding-left: 1em;
+    color: white;
+    font-weight: 80;
+    margin-top:0;
+    margin-bottom: 1px;
+     /*  line-height: 65px;
+    
+    
+}*/
+
+h1 {
+   background-color: #0063a7;
+   font-weight: 80;
+   color: white; 
+   padding-left: 0em;
+   height: 70px;
+   width: 100%;
+   margin:0;
+}
+
+h2, h3 {
+  font-weight: 100;
+  margin-bottom: 5;
+  margin-top: 5;
+  color: #0063a7; /*rgb(0, 99, 167) - monash white blue*/
+  
+}
+
+
+ul {
+  list-style: none; /* Remove list bullets */
+  padding: 0;
+  margin: 0;
+}
+
+ul li:before {
+  content: "■"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: #cc5900; /* Or a color you prefer */
+  font-size: 1.2em;
+}
+
+li { 
+  padding-left: 16px; 
+  margin-top: 12px;
+}
+
+
+/* EBSM blockquote */
+mu-blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-top: solid 10px #0063a7;
+  background-color:  #E7E7E7;
+  padding: 1em;
+  
+   /*Font*/
+  color: black;
+  
+  /*Borders - (Optional)*/
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+div.my-header {
+    background-color: #0063a7;
+   /* background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffb76b), color-stop(0%,#ffa73d), color-stop(0%,#ffffff), color-stop(10%,#ffffff), color-stop(25%,#F77A00), color-stop(100%,#F77A00));*/
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 80px;
+    width: 100%;
+    text-align: left;
+}
+

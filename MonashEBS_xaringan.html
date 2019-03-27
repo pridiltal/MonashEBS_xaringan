@@ -3,8 +3,8 @@
   <head>
     <title>Monash EBS xaringan Template</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Priyanga Dilini Talagala" />
-    <meta name="date" content="2019-03-26" />
+    <meta name="author" content="Your Name" />
+    <meta name="date" content="2019-03-27" />
     <link rel="stylesheet" href="monashEBS.css" type="text/css" />
   </head>
   <body>
@@ -12,18 +12,13 @@
 class: center, middle, inverse, title-slide
 
 # Monash EBS xaringan Template
-### Priyanga Dilini Talagala
-### 2019-03-26
+### Your Name
+### 2019-03-27
 
 ---
 
 
-
-layout: true
-  
-&lt;div class="my-header"&gt;&lt;/div&gt;
-
----
+# Bullets 
 
 ### Slides with bullets
 - Bullet 1
@@ -37,6 +32,7 @@ layout: true
 1. Nonsense
 
 ---
+# Bullets more
 
 ###  Build incremental slides
 
@@ -51,7 +47,9 @@ Use two dashes -- to separate content on a slide.
 
 - Bullet 3
 
----
+--
+
+## More tips
 
 - Use `&lt;span style="color:chocolate"&gt;text&lt;/span&gt;` to &lt;span style="color:chocolate"&gt;highlight&lt;/span&gt; some text
 - We can also make `blockquotes`
@@ -59,7 +57,7 @@ Use two dashes -- to separate content on a slide.
   
 &lt;mu-blockquote&gt; This is a blocked quote &lt;/mu-blockquote&gt;
 
----
+
 
 
 ---
@@ -68,7 +66,8 @@ class: inverse, center, middle
 # Using R
 
 ---
-## Slide with R output
+
+# Slide with R output
 
 
 ```r
@@ -87,7 +86,8 @@ summary(cars)
 
 ---
 
-## Slide with graphics
+
+# Slide with graphics
 
 
 ```r
@@ -97,7 +97,8 @@ plot(pressure)
 &lt;img src="MonashEBS_xaringan_files/figure-html/pressure-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
-## Math Expressions
+
+# Math Expressions
 
 You can write LaTeX math expressions inside a pair of dollar signs, e.g. &amp;#36;\alpha+\beta$ renders `\(\alpha+\beta\)`. You can use the display style with double dollar signs:
 
@@ -114,7 +115,8 @@ Limitations:
 3. Math does not work on the title slide (see [#61](https://github.com/yihui/xaringan/issues/61) for a workaround).
 
 ---
-## Slide with mathematics
+
+# Slide with mathematics
 
 Quantile score for observation `\(y\)`. For `\(0&lt;p&lt;1\)`:
 
@@ -135,7 +137,8 @@ class: inverse, center, middle
 #  RMarkdown Examples
 
 ---
-## R Figure
+
+# R Figure
 
 The following code generates the plot on the next slide (taken from
 `help(bxp)` and modified slightly):
@@ -153,30 +156,12 @@ bxp(bx.p, notch = FALSE, boxfill = "orange",
 ```
 
 ---
-## R Figure
+# R Figure
 
 &lt;img src="MonashEBS_xaringan_files/figure-html/pressureFig-1.png" width="60%" style="display: block; margin: auto;" /&gt;
----
-class: inverse
-
-## R Figure
-
-
-
-```r
-library(stats)
-set.seed(753)
-bx.p &lt;- boxplot(split(rt(100, 4),
-                      gl(5, 20)), plot=FALSE)
-bxp(bx.p, notch = FALSE, boxfill = "orange",
-    frame = FALSE, outl = TRUE,
-    main = "Example from help(bxp)")
-```
-
-&lt;img src="MonashEBS_xaringan_files/figure-html/pressureCode2-1.png" width="40%" style="display: block; margin: auto;" /&gt;
 
 ---
-## R Table
+# R Table
 
 A simple `knitr::kable` example:
 
@@ -246,7 +231,8 @@ knitr::kable(mtcars[1:4, 1:7],caption="(Parts of) the mtcars dataset",
 &lt;/table&gt;
 
 ---
-## Resources
+
+# Resources
 
 - overview
 
@@ -273,11 +259,13 @@ knitr::kable(mtcars[1:4, 1:7],caption="(Parts of) the mtcars dataset",
 
 
 
-
-
 ---
 
-class: center, middle
+class: clear
+
+## Slide without border
+---
+class: center, middle, inverse
 
 # Thanks!
     </textarea>
