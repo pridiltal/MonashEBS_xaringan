@@ -56,9 +56,17 @@ If you use `class: clear` for a slide, you can have a slide without the colored 
   <span>George E. P. Box</span>
 </blockquote>
 
-- Use `<highlight-block>text</highlight-block>` to highlight some text.
+---
+class: clear
 
-<highlight-block>xaringan is so powerful!</highlight-block>
+- Use `<highlight-block>text</highlight-block>` to highlight some text.
+- Use `<span style="color:blue">text</span>` to change the colour.
+- Use `<br>` to put a line break.
+
+<highlight-block>
+xaringan is so powerful! <br>  <span style="color:red">xaringan is so powerful!</span>
+</highlight-block>
+
 ---
 
 # Bullets 
@@ -67,15 +75,6 @@ If you use `class: clear` for a slide, you can have a slide without the colored 
 - Bullet 1
 - Bullet 2
 - Bullet 3
-
-
-### Some enumeration
-1. The first item
-1. Stuff
-1. Nonsense
-
----
-# Bullets more
 
 ###  Build incremental slides
 
@@ -90,8 +89,19 @@ Use two dashes -- to separate content on a slide.
 
 - Bullet 3
 
+---
+# Bullets more
 
+### Some enumeration
+1. The first item
+2. Stuff
+3. Nonsense
 
+### Leaving 4 spaces does another magic
+
+     - bullet 1
+     - bullet 2
+     - bullet 3
 ---
 class: inverse, center, middle
 
@@ -126,7 +136,9 @@ $$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
 
 $$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
 
-Limitations:
+---
+
+# Limitations
 
 1. The source code of a LaTeX math expression must be in one line, unless it is inside a pair of double dollar signs, in which case the starting `$$` must appear in the very beginning of a line, followed immediately by a non-space character, and the ending `$$` must be at the end of a line, led by a non-space character;
 2. There should not be spaces after the opening `$` or before the closing `$`.

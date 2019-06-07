@@ -4,7 +4,7 @@
     <title>xaringan</title>
     <meta charset="utf-8" />
     <meta name="author" content="Your Name" />
-    <meta name="date" content="2019-03-28" />
+    <meta name="date" content="2019-06-08" />
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link rel="stylesheet" href="MonashBS.css" type="text/css" />
     <link rel="stylesheet" href="MonashBS-font.css" type="text/css" />
@@ -16,7 +16,7 @@ class: center, middle, inverse, title-slide
 # xaringan
 ## with a </br>Monash Business School theme
 ### Your Name
-### 2019-03-28
+### 2019-06-08
 
 ---
 
@@ -63,9 +63,17 @@ If you use `class: clear` for a slide, you can have a slide without the colored 
   &lt;span&gt;George E. P. Box&lt;/span&gt;
 &lt;/blockquote&gt;
 
-- Use `&lt;highlight-block&gt;text&lt;/highlight-block&gt;` to highlight some text.
+---
+class: clear
 
-&lt;highlight-block&gt;xaringan is so powerful!&lt;/highlight-block&gt;
+- Use `&lt;highlight-block&gt;text&lt;/highlight-block&gt;` to highlight some text.
+- Use `&lt;span style="color:blue"&gt;text&lt;/span&gt;` to change the colour.
+- Use `&lt;br&gt;` to put a line break.
+
+&lt;highlight-block&gt;
+xaringan is so powerful! &lt;br&gt;  &lt;span style="color:red"&gt;xaringan is so powerful!&lt;/span&gt;
+&lt;/highlight-block&gt;
+
 ---
 
 # Bullets 
@@ -74,15 +82,6 @@ If you use `class: clear` for a slide, you can have a slide without the colored 
 - Bullet 1
 - Bullet 2
 - Bullet 3
-
-
-### Some enumeration
-1. The first item
-1. Stuff
-1. Nonsense
-
----
-# Bullets more
 
 ###  Build incremental slides
 
@@ -97,8 +96,19 @@ Use two dashes -- to separate content on a slide.
 
 - Bullet 3
 
+---
+# Bullets more
 
+### Some enumeration
+1. The first item
+2. Stuff
+3. Nonsense
 
+### Leaving 4 spaces does another magic
+
+     - bullet 1
+     - bullet 2
+     - bullet 3
 ---
 class: inverse, center, middle
 
@@ -147,7 +157,9 @@ $$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
 
 `$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$`
 
-Limitations:
+---
+
+# Limitations
 
 1. The source code of a LaTeX math expression must be in one line, unless it is inside a pair of double dollar signs, in which case the starting `$$` must appear in the very beginning of a line, followed immediately by a non-space character, and the ending `$$` must be at the end of a line, led by a non-space character;
 2. There should not be spaces after the opening `$` or before the closing `$`.
