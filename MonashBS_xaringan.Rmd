@@ -12,6 +12,7 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+      slideNumberFormat: "%current%" 
 ---
 
 # How to use it
@@ -105,7 +106,8 @@ Use two dashes -- to separate content on a slide.
 ---
 class: inverse, center, middle
 
-# Using R
+# <span style="color:#cc5900"> **Figures**  </span>  Using R
+
 
 ---
 
